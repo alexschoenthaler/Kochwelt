@@ -1,0 +1,70 @@
+.menue {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    grid-template-columns: 1fr, 1fr;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(216, 215, 211);
+}
+
+.menue-left {
+    width: 600px;
+    height: 300px;
+    border: 7px solid rgb(113, 120, 59);
+    border-radius: 7px;
+}
+
+.menue-right {
+    max-width: 600px;
+}
+
+
+.Rezeptabteilung {
+    text-align: center;
+}
+
+.Rezeptbox {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 135px;
+    padding-bottom: 60px;
+    border-radius: 7px;
+}
+
+.box1 {
+    border: 7px solid rgb(113, 120, 59);
+    border-radius: 7px;
+    width: 200px;
+    height: 200px;
+}
+
+.descriptionbox {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    grid-template-columns: 1fr, 1fr;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(216, 215, 211);
+
+}
+
+.dscimg-left {
+    max-width: 600px;
+
+}
+
+.dscimg-right {
+    width: 600px;
+    height: 300px;
+    border: 10px solid rgb(113, 120, 59);
+    border-radius: 7px;
+}
+
+.bottom {
+    background-color: rgb(216, 215, 211);
+    height: 500px;
+}
