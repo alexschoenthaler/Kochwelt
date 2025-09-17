@@ -1,7 +1,8 @@
 html {
     scroll-behavior: smooth;
 }
-.external_distance{
+
+.external_distance{    /* external_distance Alex */
     padding-left: 150px;
     padding-right: 150px;
 }
@@ -36,31 +37,37 @@ header {
     align-items: center;
     gap: 30px;
 }
-.kwlogo{
+
+.kwlogo{    /* Main logo Kochwelt Alex */
     height: 50px;
 }
-nav{
+
+nav{    /* Alex */
     display: flex;
     justify-content: space-between;
 }
-.navli{
+
+.navli{    /* Alex */
     display: flex;
     align-items: flex-end;
     gap: 20px;
 }
-.navli ul{
+
+.navli ul{   /*Removed from browser-specified style. Alex  */
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start:0;
 }
-.navli a{
+
+.navli a{ /* Alex */
     cursor: pointer;
     text-decoration: none;
     color: black;
    
 }
 
-.navli a:hover{
+
+.navli a:hover{   /* Alex */
     text-decoration: underline green;
 }
 
