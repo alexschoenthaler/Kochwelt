@@ -6,13 +6,13 @@
     grid-template-columns: 1fr, 1fr;
     height: 600px;
     width: 100%;
-    background-color: rgb(216, 215, 211);
+    background-color: var(--globalwhite); /*M:Farben in var geändert*/
 }
 
 .menue-left {
     width: 600px;
     height: 300px;
-    border: 7px solid rgb(113, 120, 59);
+    border: 7px solid var(--globalgreen); /*M:Farben in var geändert*/
     border-radius: 7px;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .box1 {
-    border: 7px solid rgb(113, 120, 59);
+    border: 7px solid var(--globalgreen); /*M:Farben in var geändert*/
     border-radius: 7px;
     width: 200px;
     height: 200px;
@@ -48,7 +48,7 @@
     grid-template-columns: 1fr, 1fr;
     height: 600px;
     width: 100%;
-    background-color: rgb(216, 215, 211);
+    background-color: var(--globalwhite); /*M:Farben in var geändert*/
 
 }
 
@@ -60,11 +60,11 @@
 .dscimg-right {
     width: 600px;
     height: 300px;
-    border: 10px solid rgb(113, 120, 59);
+    border: 10px solid var(--globalgreen); /*M:Farben in var geändert*/
     border-radius: 7px;
 }
 
 .bottom {
-    background-color: rgb(216, 215, 211);
+    background-color: var(--globalgreen); /*M:Farben in var geändert*/
     height: 500px;
 }
