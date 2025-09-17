@@ -1,6 +1,7 @@
 :root {
-    --mygreen: rgb(113, 120, 59);
-}
+    --globalgreen: rgb(113, 120, 59);
+    --globalwhite: rgb(216, 215, 211);
+} /*M: Farben in var geändert*/
 
 html {
     scroll-behavior: smooth;
@@ -27,7 +28,7 @@ html {
 
 
 header {
-    background-color: var(--mygreen);
+    background-color: var(--globalgreen); /*M: Farben in var geändert*/
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
@@ -87,7 +88,7 @@ body {
 }
 
 button {
-    background-color: var(--mygreen);
+    background-color: var(--globalgreen); /*M: Farben in var geändert*/
     color: white;
     padding: 10px 20px;
     border: none;
@@ -100,7 +101,7 @@ button {
 
 
 footer {
-    background-color: var(--mygreen);
+    background-color: var(--globalgreen); /*M: Farben in var geändert*/
     text-align: center;
     font-family: Arial, sans-serif;
     height: 100px;
