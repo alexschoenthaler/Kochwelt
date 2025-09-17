@@ -16,8 +16,6 @@
     
     border-collapse: collapse;
     text-align: left;
-    border-spacing: 0px 8px;
-    
 } 
 table td{
     border-bottom: 1px solid var(--globallightgray);
