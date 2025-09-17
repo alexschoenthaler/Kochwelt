@@ -12,11 +12,15 @@
     object-fit: cover;
 }
 
- table{
+table{
     
     border-collapse: collapse;
     text-align: left;
 } 
 table td{
     border-bottom: 1px solid var(--globallightgray);
+}
+
+main h1{
+    margin:0;
 }
