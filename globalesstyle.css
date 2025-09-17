@@ -81,7 +81,7 @@ nav{
 }
 
 /* Hamburger-Button (Yves) */
-.hamburger_button {
+#hamburger_button {
     display: none;
     flex-direction: column;
     justify-content: space-around;
@@ -96,7 +96,7 @@ nav{
     transition: transform 0.3s ease;
 }
 
-    .bar {
+    #hamburger_button .bar {
         width: 100%;
         height: 3px;
         background: black;
@@ -136,7 +136,7 @@ footer {
 }
 
 
-/* Mobile View */
+/* Mobile View (Yves) */
 @media (max-width: 1100px) {
 
     .external_distance{    
@@ -153,13 +153,42 @@ footer {
 
 }
 
+main {
+    display: none;
+}
+
 @media (max-width: 620px) {
 
-    .navli {    
-        display: none;
-    } 
+    .navli {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
 
-    .hamburger_button {
+        padding-top: 20px;
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: 70px;
+        right: 0px;
+        gap: 20px;
+        background-color: var(--globalgreen);
+        border-top: 1px solid var(--globaldarkgreen);
+        border-left: 1px solid var(--globaldarkgreen);
+        transition: transform 250ms ease-in-out;
+        transform: translateX(100%);
+    }
+       
+        .navli ul {
+            width: 100%;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--globaldarkgreen);
+        } 
+
+        .navli.active {
+          transform: translateX(0%);
+        }
+
+    #hamburger_button {
         display: flex;
     }
 
