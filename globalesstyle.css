@@ -1,5 +1,43 @@
-html{
+:root{
     margin:0;
+    ---myblack: black;
+    ---mygreen: green;
     
 }
+.external_distance{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+header{
+    height: 120px;
+}
+footer{
+    height: 120px;
+}
+.kwlogo{
+    height: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.navli{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+.navli ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start:0;
+}
+.navli a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(---myblack);
+   
+}
 
+.navli a:hover{
+    text-decoration: underline var(---mygreen);
+}
