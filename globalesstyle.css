@@ -1,3 +1,7 @@
+:root {
+    --mygreen: rgb(113, 120, 59);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,7 +27,7 @@ html {
 
 
 header {
-    background-color: rgb(113, 120, 59);
+    background-color: var(--mygreen);
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
@@ -83,7 +87,7 @@ body {
 }
 
 button {
-    background-color: rgb(113, 120, 59);
+    background-color: var(--mygreen);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -96,7 +100,7 @@ button {
 
 
 footer {
-    background-color: rgb(113, 120, 59);
+    background-color: var(--mygreen);
     text-align: center;
     font-family: Arial, sans-serif;
     height: 100px;
