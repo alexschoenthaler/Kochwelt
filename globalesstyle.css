@@ -56,12 +56,12 @@ nav{
 .navli a{
     cursor: pointer;
     text-decoration: none;
-    color: var(---myblack);
+    color: black;
    
 }
 
 .navli a:hover{
-    text-decoration: underline var(---mygreen);
+    text-decoration: underline green;
 }
 
 body {
