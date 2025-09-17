@@ -2,6 +2,7 @@
     --globalgreen: rgb(113, 120, 59);
     --globalwhite: rgb(216, 215, 211);
     --globaldarkgreen: rgb(15, 48, 12); /* Alex Farben in var geändert */
+    --globallightgray: rgb(203, 195, 195);
 } /*M: Farben in var geändert*/
 
 html {
