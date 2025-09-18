@@ -1,0 +1,105 @@
+main h1, main h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.recipe {
+    display: flex;
+    gap: 150px;
+}
+
+    .recipe img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 5px solid var(--globaldarkgreen);
+        object-fit: cover;
+    }
+
+    /* Infoboxes */
+    .recipe_infos {
+        display: flex;
+
+        padding-bottom: 24px;
+        gap: 10px;
+        color: var(--globalwhite);
+    }
+
+    .recipe_infoitems {
+        display: flex;
+        align-items: center;
+
+        cursor: default;
+        padding: 6px 15px;
+        gap: 5px;
+        background-color: var(--globalgreen);
+        border-radius: 8px;
+    }
+
+    .recipe_infoitems img {
+        width: 20px;
+        height: 20px;
+        border: 0px;
+        border-radius: 0px;
+    }
+
+    /* Portion-Table */
+    .portions {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 24px;
+    }
+        .portions form {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .portions form label {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .portions form input {
+            width: 100px;
+            height: 20px;
+        }
+
+        table{
+            border-collapse: collapse;
+            text-align: left;
+        } 
+
+            table td{
+                white-space: nowrap;
+                border-bottom: 1px solid var(--globallightgray);
+            }
+
+            td:nth-child(odd) {
+                padding-right: 20px;
+            }
+            
+/* Cooking */
+ol {
+    margin: 0;
+}
+
+
+
+/* Recipe-Author */
+.profile {
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 20px;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
