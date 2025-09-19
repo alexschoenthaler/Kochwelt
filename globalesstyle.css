@@ -4,12 +4,18 @@
     --globaldarkgreen: rgb(15, 48, 12);
     /* Alex Farben in var geändert */
     --globallightgray: rgb(231, 228, 228);
+    --globaldarkgray: rgb(94, 91, 91);
+
 }
 
 /*M: Farben in var geändert*/
 
 html {
     scroll-behavior: smooth;
+    
+}
+body{
+    width: 100%;
 }
 /* external_distance Alex */
 .external_distance {
