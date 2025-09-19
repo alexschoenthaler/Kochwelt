@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./globalesstyle.css">
-    <link rel="stylesheet" href="./Kochwelt.css">
+    <title>Pokebowl</title>
 
-    <!--  have to chanched  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Kochwelt</title>
+    <link rel="stylesheet" href="./globalesstyle.css">
+    <link rel="stylesheet" href="./Pokebowl.css">
+
+
 </head>
 
 <body>
@@ -26,7 +23,7 @@
         An <img> tag would be useful for photos or complex graphics, but SVG is usually the better choice for logos and icons.
         Created using an online generator, for example:
         https://nikitahl.github.io/svg-2-code/ -->
-            
+
             <?xml version="1.0" standalone="no"?>
             <!DOCTYPE svg
                 PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
@@ -87,73 +84,76 @@
                 <ul><a href="#Impressum">Impressum</a></ul>
             </div>
         </nav>
-
-        <!-- Hamburger-Button Yves-->
-        <div id="hamburger_button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navli">
-                    
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-                
-        </div>
-
     </header>
 
-    <main>
-        <Menue class="menue">
-            <img class="menue-left" src="./03 - Gruppenarbeit - Kochwelt/img/croissant.jpg">
+    <Menue Maria class="Maria">
+        <h1>Pokébowl</h1>
+        <img class="pokebowl" src="./03 - Gruppenarbeit - Kochwelt/Poke_quer.jpg">
+    </Menue>
 
-            <div class="menue-right">
-                <h1 class="fonts">Menue 1</h1>
-                <p class="fonts2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quo eius, hic sit
-                    nesciunt
-                    consequatur,
-                    totam, quia et eaque tenetur porro modi necessitatibus reprehenderit exercitationem veritatis
-                    dolorem
-                    distinctio mollitia dolores!</p>
-                <button class="button">zum Rezept</button>
-            </div>
-        </Menue>
+    <icon>
 
+        <a class="icon-class"><img class="icons" src="./03 - Gruppenarbeit - Kochwelt/img/icons/clock-regular.svg">
+            40
+            Min.</a>
+        <a class="icon-class"><img class="icons" src="./03 - Gruppenarbeit - Kochwelt/img/icons/brain-solid.svg">
+            simpel</a>
+        <a class="icon-class"><img class="icons"
+                src="./03 - Gruppenarbeit - Kochwelt/img/icons/calendar-alt-regular.svg">
+            17.09.2025</a>
 
-        <Rezeptabteilung class="Rezeptabteilung">
-            <h1 class="fonts">Wie wäre es mit...</h1>
-            <Rezepte class="Rezeptbox">
+    </icon>
 
-                <a href="./A_apricot_dumplings.html"><img class="box1" src="./03 - Gruppenarbeit - Kochwelt/img/salad.jpg">
-                </a>
-                <a href="./Pokebowl.html"><img class="box1" src="./03 - Gruppenarbeit - Kochwelt/img/wok.jpg">  <!--HTML seite für Pokebowl eingefügt-->
-                </a>
-                <a href="Yussuf"><img class="box1" src="./03 - Gruppenarbeit - Kochwelt/img/salad.jpg">
-                </a>
-                <a href="./chicken_veggie_pan.html"><img class="box1" src="./03 - Gruppenarbeit - Kochwelt/img/wok.jpg">
-                </a>
+    <input mintype="number" class="button" id="portionen" name="Zutaten für">
+    <label for="portionen" class="button">Portionen</label>
 
-            </Rezepte>
-        </Rezeptabteilung>
+    <table>
+        <tr>
+            <th class="anzahl">1</th>
+            <th class="Zutat">Granatapfel</th>
+        </tr>
+        <tr>
+            <th class="anzahl">1</th>
+            <th class="Zutat">Spinat gedämpft</th>
+        </tr>
+        <tr>
+            <th class="anzahl">1</th>
+            <th class="Zutat">Edamame</th>
+        </tr>
+        <tr>
+            <th class="anzahl">1</th>
+            <th class="Zutat">Pilze gekocht</th>
+        </tr>
+        <tr>
+            <th class="anzahl">1</th>
+            <th class="Zutat">Mango</th>
+        </tr>
+        <tr>
+            <th class="anzahl">1</th>
+            <th class="Zutat">gekochtes Ei</th>
+        </tr>
+        <tr>
+            <th class="anzahl">1</th>
+            <th class="Zutat">Avocado</th>
+        </tr>
+        <tr>
+            <th class="anzahl">1</th>
+            <th class="Zutat">Lachs, roh oder gebraten</th>
+        </tr>
+        <tr>
+            <th class="anzahl">1</th>
+            <th class="Zutat">Reis</th>
+        </tr>
+    </table>
 
-        <description class="descriptionbox">
-            <div class="dscimg-left">
-                <h1>Dieses oder jenes</h1>
-                <p class="fonts2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in quo nostrum
-                    voluptate
-                    amet
-                    voluptatibus sequi rerum sapiente eaque explicabo minima laborum officia saepe, maiores placeat sint
-                    perspiciatis id molestias?</p>
-            </div>
-            <img class="dscimg-right" src="./03 - Gruppenarbeit - Kochwelt/img/wok.jpg">
-        </description>
-
-        <bottom class="bottom">
-        </bottom>
-    </main>
-
-    <footer>
+    </body-maria>
+    <footer id="footer">
         <p>Impressum | Datenschutz | Kontakt</p>
         <p>© 2025 Kochwelt. Alle Rechte vorbehalten.</p>
     </footer>
+    <script src="global.js"></script>
 
 </body>
 
-<script src="./script.js"></script>
+
 </html>

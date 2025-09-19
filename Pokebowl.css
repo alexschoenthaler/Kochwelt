@@ -1,0 +1,49 @@
+.body-Maria {
+
+    height: max-content;
+    background-color: rgb(216, 215, 211);
+}
+
+.Maria {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 150px;
+}
+
+
+.pokebowl {
+    width: 80%;
+    height: 300px;
+    border-radius: 7px;
+}
+
+.icon-class {
+    border: 2px solid rgb(113, 120, 59);
+    border-radius: 7px;
+    padding: 10px 20px;
+
+}
+
+.icons {
+    gap: 20px;
+    width: 20x;
+    height: 20px;
+}
+
+
+tr {
+    border: 2px solid rgb(113, 120, 59);
+    border-radius: 7px;
+}
+
+.anzahl {
+    width: 50px
+}
+
+.Zutat {
+    text-align: left;
+    width: 500px;
+}
