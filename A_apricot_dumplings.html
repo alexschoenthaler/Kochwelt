@@ -7,7 +7,8 @@
     <title>Marillen Knödel</title>
     <link rel="stylesheet" href="./A_apricot_dumplings.css">
     <link rel="stylesheet" href="./globalesstyle.css">
-    <link rel="stylesheet" href="./script.js">
+    
+    
 </head>
 
 <body>
@@ -98,8 +99,8 @@
         <!-- submit button -->
         <form class="form_calculation">
             <label for="portion_form">Zutaten für:</label>
-            <input class="portions_input" type="number" min="1" max="20" required>
-            <button type="submit">Portionen</button>
+            <input id="portions_input" value="1" type="number" min="1" max="20" required>
+            <button type="submit" onclick="portioncalculation('portions_input')">Portionen</button>
         </form>
         <!-- table -->
         <section class = "space_top">
@@ -107,23 +108,23 @@
                 
                     <h3>Zutaten für den Knödel</h3>
                 <tr>
-                    <td>230g</td>
+                    <td class="calculated_value">230g</td>
                     <td class="vertical_table_space">körniges Mehl</td>
                 </tr>
                 <tr>
-                    <td>380g</td>
+                    <td class="calculated_value">380g</td>
                     <td class="vertical_table_space">Speisetopfen</td>
                 </tr>
                 <tr>
-                    <td>2</td>
+                    <td class="calculated_value">2</td>
                     <td class="vertical_table_space">Eier</td>
                 </tr>
                 <tr>
-                    <td>90g</td>
+                    <td class="calculated_value">90g</td>
                     <td class="vertical_table_space">flüssige Butter </td>
                 </tr>
                 <tr>
-                    <td>0,4g</td>
+                    <td class="calculated_value">0,4g</td>
                     <td class="vertical_table_space">Salz</td>
                 </tr>
             </table>
@@ -185,6 +186,7 @@
     <footer>
 
     </footer>
+    <script src="./script.js"></script>
 </body>
-
+   
 </html>
