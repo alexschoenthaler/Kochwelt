@@ -127,40 +127,40 @@
                     <!-- Portiontable -->
                     <div class="portions">
                         
-                        <form>
-                            <label for="portion_form">Zutaten für:</label>
-                            <input type="number" value="2" min="1" max="20">
+                        <form id="portion_form">
+                            <label for="portion_input">Zutaten für:</label>
+                            <input type="number" id="portion_input" value="1" min="1" max="20">
                             <button type="submit">Portionen</button>
                         </form>
 
                         <table>
                             <tbody>
                                 <tr>
-                                    <td>300 g</td>
+                                    <td id="hähnchenbrustfilet">300 g</td>
                                     <td>Hähnchenbrustfilet</td>
                                 </tr>
                                 <tr>
-                                    <td>1 </td>
+                                    <td id="paprika">1 </td>
                                     <td>rote Paprika</td>
                                 </tr>
                                 <tr>
-                                    <td>1 </td>
+                                    <td id="zuccini">1 </td>
                                     <td>Zuccini</td>
                                 </tr>
                                 <tr>
-                                    <td>1 </td>
+                                    <td id="zwiebel">1 </td>
                                     <td>Zwiebel</td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>EL Olivenöl</td>
+                                    <td id="olivenoel">1 EL</td>
+                                    <td>Olivenöl</td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>TL Paprikapulver (edelsüß oder geräuchert)</td>
+                                    <td id="paprikapulver">1 TL</td>
+                                    <td>Paprikapulver (edelsüß oder geräuchert)</td>
                                 </tr>
                                 <tr>
-                                    <td>150 ml</td>
+                                    <td id="sahne">150 ml</td>
                                     <td>Sahne</td>
                                 </tr>
                             </tbody>
@@ -179,7 +179,7 @@
                     
                 <h2>Zubereitung</h2>
                 <ol>
-                    <li>Hähnchenbrustfilet in Streifen schneiden... dieses mit Salz, Pfeffer und 1 EL Paprikapulver würzen.</li>
+                    <li>Hähnchenbrustfilet in Streifen schneiden... dieses mit Salz, Pfeffer und der hälfte an bereitgestelltem Paprikapulver würzen.</li>
                     <li>Öl in der Pfanne erhitzen und die Hähnchenstreifen scharf anbraten, bis sie goldbraun sind.</li>
                     <li>Zwiebel, Paprika und Zuccinie klein schneiden/würfeln, zum Hähnchen dazu geben und ca. 5 min mit anbraten.</li>
                     <li>Mit restlichem Paprikapulver nach würzen.</li>
@@ -208,5 +208,6 @@
     </body>
 
     <script src="./script.js"></script>
+    <script src="./chicken_veggie_pan.js"></script>
 
 </html>
