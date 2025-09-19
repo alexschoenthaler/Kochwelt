@@ -7,6 +7,7 @@
     <title>Marillen Knödel</title>
     <link rel="stylesheet" href="./A_apricot_dumplings.css">
     <link rel="stylesheet" href="./globalesstyle.css">
+    <link rel="stylesheet" href="./script.js">
 </head>
 
 <body>
@@ -74,74 +75,103 @@
         </nav>
     </header>
     <main class="recipe external_distance">
-
         <h1>Marillenknödel mit Topfenteig</h1>
-        <section class="ingredients_dumplings">
-            <div>
-                <table>
-                    <tr>
-                        <th>Zutaten für den Knödel</th>
-                    </tr>
-                    <tr>
-                        <td>230g</td>
-                        <td class="ingredient">körniges Mehl</td>
-                    </tr>
-                    <tr>
-                        <td>380g</td>
-                        <td class="ingredient">Speisetopfen</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td class="ingredient">Eier</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td class="ingredient">Dotter</td>
-                    </tr>
-                    <tr>
-                        <td>90g</td>
-                        <td class="ingredient">flüssige Butter </td>
-                    </tr>
-                    <tr>
-                        <td>1 Prise</td>
-                        <td class="ingredient">Salz</td>
-                    </tr>
-                    <tr>
-                        <th>Zutaten für die Füllung</th>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td class="ingredient">entsteinte Marillen</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td class="ingredient">Würfelzucker</td>
-                    </tr>
-                    <tr>
-                        <th>Butter-Brösel</th>
-                    </tr>
-                    <tr>
-                        <td>150g</td>
-                        <td class="ingredient">geröstete Semmelbrösel</td>
-                    </tr>
-                    <tr>
-                        <td>3 Esl.</td>
-                        <td class="ingredient">flüssige Butter</td>
-                    </tr>
-                    <tr>
-                        <td>1 Esl.</td>
-                        <td class="ingredient">Zucker</td>
-                    </tr>
-                </table>
+        <img class="apricot_dumblings_pic space_top"
+            src="./03 - Gruppenarbeit - Kochwelt/img/A_apricot_dumplings/apricot_dumblings.jpg" alt="Marillenknödel">
+
+        <div class="recipe_info space_top">
+            <div class="recipe_infoitems">
+                <img src="./03 - Gruppenarbeit - Kochwelt/img/icons/clock-regular.svg" alt="Uhr">
+                <span>15 Min.</span>
             </div>
-            <div>
-                <img class="apricot_dumblings_pic"
-                    src="./03 - Gruppenarbeit - Kochwelt/img/A_apricot_dumplings/apricot_dumblings.jpg"
-                    alt="Marillenknödel">
+            <div class="recipe_infoitems">
+                <img src="./03 - Gruppenarbeit - Kochwelt/img/icons/brain-solid.svg" alt="Gehirn">
+                <span>simple</span>
             </div>
+            <div class="recipe_infoitems">
+                <img src="./03 - Gruppenarbeit - Kochwelt/img/icons/calendar-alt-regular.svg" alt="Kalender">
+                <span>18.09.2025</span>
+            </div>
+        </div>
+        <!-- submit button -->
+        <form class="form_calculation">
+            <label for="portion_form">Zutaten für:</label>
+            <input class="portions_input" type="number" min="1" max="20" required>
+            <button type="submit">Portionen</button>
+        </form>
+        <!-- table -->
+        <section class = "space_top">
+            <table>
+                
+                    <h3>Zutaten für den Knödel</h3>
+                <tr>
+                    <td>230g</td>
+                    <td class="vertical_table_space">körniges Mehl</td>
+                </tr>
+                <tr>
+                    <td>380g</td>
+                    <td class="vertical_table_space">Speisetopfen</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="vertical_table_space">Eier</td>
+                </tr>
+                <tr>
+                    <td>90g</td>
+                    <td class="vertical_table_space">flüssige Butter </td>
+                </tr>
+                <tr>
+                    <td>0,4g</td>
+                    <td class="vertical_table_space">Salz</td>
+                </tr>
+            </table>
+            <table class="space_top">
+                
+                    <h3>Zutaten für die Füllung</h3>
+               
+                <tr>
+                    <td>12Stk</td>
+                    <td class="vertical_table_space">entsteinte Marillen</td>
+                </tr>
+                <tr>
+                    <td>12Stk</td>
+                    <td class="vertical_table_space">Würfelzucker</td>
+                </tr>
+            </table>
+            <table class="space_top">
+                    <h3>Butter-Brösel</h3>
+                <tr>
+                    <td>150g</td>
+                    <td class="vertical_table_space">geröstete Semmelbrösel</td>
+                </tr>
+                <tr>
+                    <td>1 Esl.</td>
+                    <td class="vertical_table_space">flüssige Butter</td>
+                </tr>
+                <tr>
+                    <td>1 Esl.</td>
+                    <td class="vertical_table_space">Zimtzucker</td>
+                </tr>
+            </table>
         </section>
-
-
+        <section>
+            <h2>Zubereitung</h2>
+            <p>
+                Für den Topfenteig die Butter und die Eier flaumig in einer Schüssel verrühren.
+                Danach den Speisetopfen, Mehl und Salz hinzugeben und gut durchkneten bis ein Teig entsteht.
+                Den Teig in gleich große Stücke aufteilen und mit bemehlten Händen die einzelnen Teigteile zu einer
+                flachen runden Teigscheibe drücken.
+                Die Marillen gut waschen und abtrocknen.
+                Die Marillenhälften mit jeweils einem Würfelzucker befüllen und auf die flachgedrückten Teigstücke geben und mit dem Teig zu einem Knödel formen - 
+                die Marillenstücke sollten
+                komplett vom Teig umhüllt sein.
+                In einen Topf Salzwasser zum Kochen bringen, die Marillenknödel ins Wasser geben und schwach siedend für
+                rund 10 - 12 Minuten gar kochen - das merkt man wenn die Knödel an der Wasseroberfläche schwimmen.
+                In der Zwischenzeit kann man in einer Pfanne mit der flüssigen Butter die Semmelbröseln erwärmen.
+                Zum Schluss die fertig gekochten Topfenknödel in der Pfanne mit den Semmelbröseln wälzen.
+                Vor dem Servieren werden die Marillenknödel mit Zimtzucker bestreut.
+            </p>
+        </section>
     </main>
     <footer>
 
