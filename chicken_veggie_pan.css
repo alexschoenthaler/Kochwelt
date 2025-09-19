@@ -81,6 +81,7 @@ main {
 
             td:nth-child(odd) {
                 padding-right: 20px;
+                white-space: nowrap;
             }
             
 /* Cooking */
