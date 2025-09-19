@@ -1,46 +1,50 @@
-main h1, main h2{
-    margin-top: 20px;
-    margin-bottom: 10px;
+h1, h2 {
+    margin: 0px;
+    white-space: nowrap;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 30px;
 }
 
 .recipe {
     display: flex;
-    gap: 150px;
+    flex-direction: column;
 }
 
-    .recipe img {
-        width: 300px;
+    .recipe_img {
+        width: 100%;
         height: 300px;
         border-radius: 50%;
-        border: 5px solid var(--globaldarkgreen);
+        border-radius: 10px;
         object-fit: cover;
     }
 
     /* Infoboxes */
     .recipe_infos {
         display: flex;
-
-        padding-bottom: 24px;
-        gap: 10px;
-        color: var(--globalwhite);
+        gap: 20px;
+        padding-bottom: 70px;
     }
 
     .recipe_infoitems {
         display: flex;
-        align-items: center;
 
         cursor: default;
-        padding: 6px 15px;
+        padding: 8px;
         gap: 5px;
-        background-color: var(--globalgreen);
-        border-radius: 8px;
+        background-color: var(--globallightgray);
+        border-radius: 15px;
+        white-space: nowrap;
     }
 
     .recipe_infoitems img {
         width: 20px;
         height: 20px;
-        border: 0px;
-        border-radius: 0px;
+        object-fit: contain;
     }
 
     /* Portion-Table */
@@ -48,7 +52,7 @@ main h1, main h2{
         display: flex;
         flex-direction: column;
         
-        gap: 24px;
+        gap: 30px;
     }
         .portions form {
             display: flex;
@@ -62,7 +66,7 @@ main h1, main h2{
         }
 
         .portions form input {
-            width: 100px;
+            min-width: 100px;
             height: 20px;
         }
 
@@ -72,7 +76,6 @@ main h1, main h2{
         } 
 
             table td{
-                white-space: nowrap;
                 border-bottom: 1px solid var(--globallightgray);
             }
 
@@ -81,9 +84,19 @@ main h1, main h2{
             }
             
 /* Cooking */
+.cooking {
+    display: flex;
+    flex-direction: column;
+    gap: 10px ;
+}
+
 ol {
     margin: 0;
 }
+
+    ol li {
+        white-space: wrap;
+    }
 
 
 
@@ -92,14 +105,73 @@ ol {
     display: flex;
     align-items: center;
 
-    padding-bottom: 20px;
+    padding-top: 10px;
     gap: 20px;
     font-size: 20px;
     font-weight: bold;
 }
 
     .profile img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
+        object-fit: cover;
     }
+
+
+
+@media (max-width: 620px) {
+    
+    main {
+        gap: 20px;
+    }
+    
+    
+    
+    .recipe_infos {
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 440px) {
+    
+    main h1 {
+        font-size: 20px;
+    }
+
+    .recipe {
+        align-items: center;
+    }
+
+    .recipe_infos {
+        flex-direction: column;
+
+        padding-bottom: 50px;
+        width: 120px;
+    }
+
+
+
+    /* Portionstable */
+    .portions form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .portions form input {
+            min-width: 150px;
+        }
+
+
+
+    /* Cooking */
+    ol {
+        padding-inline-start: 20px;
+    }
+}
