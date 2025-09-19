@@ -1,7 +1,9 @@
 .space_top{
     margin-top: 30px;
 }
-
+h3{
+    color: var(--globaldarkgray);
+}
 main h1{
     margin:0;
     margin-top: 70px;
@@ -47,5 +49,20 @@ table{
 table td{
     border-bottom: 1px solid var(--globallightgray);
 }
+.autor{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom:70px;
+}
 
-
+.autor img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.autor span{
+    color: var(--globaldarkgray);
+    font-size: 24px;
+}
