@@ -6,7 +6,8 @@ const incrediantial_base_value = 1;
 // object-list for incredients
 const incredients = {
     //id`s connected to table id`s in the HTML document
-                                 // params
+
+    //ID`s                             // params
   hähnchenbrustfilet:   { amount: 300, unit: "g"    },
   paprika:              { amount: 1, unit: ""     },
   zuccini:              { amount: 1, unit: ""     },
@@ -27,7 +28,7 @@ form.addEventListener("submit", e => {
     
     e.preventDefault();  //deleting of Inputvalue, after click on Button, off
 
-    const portions = parseFloat(input.value);   //portions ist now linked to the inputbox-value,
+    const portions = parseFloat(input.value);   //portions is now linked to the inputbox-value,
                                                 // "parseFLoat" make input-value to an "number"
     
     if (isNaN(portions) || portions <= 0) {
@@ -36,9 +37,9 @@ form.addEventListener("submit", e => {
         //returns an alert-desktop-message if nothing in the inputfield 
     }
 
-    // "object.entries" target our incredients, and "forEach" target every "object/item"
-    // key is an jscript specific variable, that target every object in out incredients  table,
-    // "table" + "unit" targets the param, we set before
+    // "object.entries" target our incredients, and "forEach" target every "ID`s" we set before
+    // key is an jscript specific variable, that target every object in out incredients variable,
+    // "table" + "unit" targets the param, we set in the objectlist
     Object.entries(incredients).forEach(([key, {amount, unit}]) => {
 
         // our result, which is showed in the table will be calculated if we take the "amount"-param,
