@@ -1,6 +1,4 @@
-.space_top{
-    margin-top: 30px;
-}
+
 h3{
     color: var(--globaldarkgray);
 }
@@ -14,7 +12,11 @@ main h1{
     object-fit: cover;
     border-radius: 10px;
 }
+.space_top{
+    margin-top: 30px;
+}
 
+/* Info Style */
 .recipe_info{
     display: flex;
     gap: 20px;
@@ -35,6 +37,7 @@ main h1{
     height: 20px;
     object-fit: contain;
 }
+/* Calculator */
 .form_calculation{
     margin-top: 70px;
 }
@@ -42,13 +45,15 @@ main h1{
 .vertical_table_space{
     padding-left: 100px;
 }
-
+/* Table style */
 table{
     text-align: left;
 } 
 table td{
     border-bottom: 1px solid var(--globallightgray);
 }
+
+/* creator style  */
 .autor{
     display: flex;
     align-items: center;
@@ -65,4 +70,21 @@ table td{
 .autor span{
     color: var(--globaldarkgray);
     font-size: 24px;
+}
+
+@media (max-width: 440px) {
+    
+    main h1 {
+        font-size: 20px;
+    }
+    .recipe_infos{
+        display: flex;
+        justify-content: center;
+    } 
+    .recipe_info {
+        
+        flex-direction: column;
+        /* padding-bottom: 50px; */
+        width: 120px;
+    }
 }
