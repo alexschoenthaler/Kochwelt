@@ -1,19 +1,74 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/globalesstyle.css">
-    <link rel="stylesheet" href="./css/Kochwelt.css">
 
-    <!--  have to chanched  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Kochwelt</title>
+    <script src="send_mail.html"></script>
+
+    <!--DEV25_AC09Kochwelt-->
+    <!--kochwelt2025@yahoo.com-->
+
+    <style>
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+            gap: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .off {
+            width: 5px;
+            height: 5px;
+            padding-left: 800px;
+        }
+
+        h3 {
+            color: black;
+            font-size: 42px;
+            text-align: center;
+        }
+
+
+        .center {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+
+
+        dialog {
+            border: 3px var(--globallightgrey);
+
+        }
+
+        dialog.opened {
+            border: 3px solid var(--globallightgrey);
+            border-radius: 7px;
+        }
+
+        dialog.opened::backdrop {
+            opacity: 1;
+            background-color: var(--globalgreen);
+            transition: all 3s ease-in;
+        }
+    </style>
+
+    <title>Kontakt</title>
 </head>
+
 
 <body>
     <header>
@@ -26,7 +81,7 @@
         An <img> tag would be useful for photos or complex graphics, but SVG is usually the better choice for logos and icons.
         Created using an online generator, for example:
         https://nikitahl.github.io/svg-2-code/ -->
-            
+
             <?xml version="1.0" standalone="no"?>
             <!DOCTYPE svg
                 PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
@@ -81,79 +136,93 @@
                 </g>
             </svg>
             <div class="navli external_distance">
-                <ul><a href="#start">Start</a></ul>
+                <ul><a href="./Index.html">Start</a></ul>
                 <ul><a href="#Rezept des Tages">Rezept des Tages</a></ul>
-                <ul><a href="#Kontakt">Kontakt</a></ul>
+                <ul><a href="./Kontakt.html">Kontakt</a></ul>
                 <ul><a href="#Impressum">Impressum</a></ul>
             </div>
         </nav>
-
-        <!-- Hamburger-Button Yves-->
-        <div id="hamburger_button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navli">
-                    
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-                
-        </div>
-
     </header>
-
-    <main>
-        <Menue class="menue">
-            <img class="menue-left" src="./03 - Gruppenarbeit - Kochwelt/img/croissant.jpg">
-
-            <div class="menue-right">
-                <h1 class="fonts">Menue 1</h1>
-                <p class="fonts2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quo eius, hic sit
-                    nesciunt
-                    consequatur,
-                    totam, quia et eaque tenetur porro modi necessitatibus reprehenderit exercitationem veritatis
-                    dolorem
-                    distinctio mollitia dolores!</p>
-                <button class="button">zum Rezept</button>
+    <Seitenkontrolle class="footerdown">
+        <main class="mainbox">
+            <Kontakt>
+                <h3>Kontakt</h3>
+                <div class="profile">
+                    <img src="./03 - Gruppenarbeit - Kochwelt/img/profile.png">
+                </div>
+            </Kontakt>
+            <div class="center">
+                <button aria-haspopup="contact" aria-controls="mycontact" onclick="openDialog()">Developer
+                    Kochwelt</button>
             </div>
-        </Menue>
+            <Form onsubmit="sendMail(event)">
+
+                <Dialog id="mycontact" aria-labelledby="contactTitle" aria-describedby="contactDescr">
+                    <button class="off" onclick="closeDialog()">
+                        <off>X</off>
+                    </button>
+
+                    <header>
+                        <h3 id="dialogTitle">
+                            Hier sind wir erreichbar
+                        </h3>
+                    </header>
+
+                    <label>
+                        Name:
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        E-Mail:
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        Deine Nachricht:
+                        <textarea name="message"></textarea>
+                    </label>
+
+                    <footer>
+                        <button type="submit" aria-label="close contact" onclick="closeDialog()">senden</button>
+                    </footer>
+                </Dialog>
+            </form>
 
 
-        <Rezeptabteilung class="Rezeptabteilung">
-            <h1 class="fonts">Wie wäre es mit...</h1>
-            <Rezepte class="Rezeptbox">
+            <script>function openDialog() {
+                    dialogRef.showModal();
+                    dialogRef.classList.add("opened");
+                }
 
-                <a href="./A_apricot_dumplings.html"><img class="box1" src="./03 - Gruppenarbeit - Kochwelt/img/salad.jpg">
-                </a>
-                <a href="./Pokebowl.html"><img class="box1" src="./03 - Gruppenarbeit - Kochwelt/img/wok.jpg">  <!--HTML seite für Pokebowl eingefügt-->
-                </a>
-                <a href="Yussuf"><img class="box1" src="./03 - Gruppenarbeit - Kochwelt/img/salad.jpg">
-                </a>
-                <a href="./chicken_veggie_pan.html"><img class="box1" src="./03 - Gruppenarbeit - Kochwelt/img/wok.jpg">
-                </a>
+                function sendMail(Event) {
+                    event.preventDefault(); const data = new FormData(Event.target);
+                    fetch('https://formspree.io/f/xnnbezyp', {
+                        method: 'POST', body: new FormData(Event.target), headers:
+                            { 'Accept': 'application/json' }
+                    }).then(() => {
+                        window.location.href = ("./send_mail.html");
+                    }).catch((error) => {
+                        console.log('Error:', error);
+                    });
+                }
+                const dialogRef = document.getElementById("mycontact");
 
-            </Rezepte>
-        </Rezeptabteilung>
+                dokument.getElementById("off").addEventListener("click", function () {
+                    Console.log("Abrechen gedrückt");
+                });
 
-        <description class="descriptionbox">
-            <div class="dscimg-left">
-                <h1>Dieses oder jenes</h1>
-                <p class="fonts2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in quo nostrum
-                    voluptate
-                    amet
-                    voluptatibus sequi rerum sapiente eaque explicabo minima laborum officia saepe, maiores placeat sint
-                    perspiciatis id molestias?</p>
-            </div>
-            <img class="dscimg-right" src="./03 - Gruppenarbeit - Kochwelt/img/wok.jpg">
-        </description>
+                function closeDialog() {
+                    dialogRef.close();
+                    dialogRef.classList.remove("opened");
+                }
 
-        <bottom class="bottom">
-        </bottom>
-    </main>
+            </script>
+        </main>
 
-    <footer>
-        <p>Impressum | Datenschutz | Kontakt</p>
-        <p>© 2025 Kochwelt. Alle Rechte vorbehalten.</p>
-    </footer>
-
+        <footer>
+            <p>Impressum | Datenschutz | Kontakt</p>
+            <p>© 2025 Kochwelt. Alle Rechte vorbehalten.</p>
+        </footer>
+    </Seitenkontrolle>
 </body>
 
-<script src="./js/script.js"></script>
 </html>

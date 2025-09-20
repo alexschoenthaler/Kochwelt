@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokebowl</title>
 
-    <link rel="stylesheet" href="./globalesstyle.css">
-    <link rel="stylesheet" href="./Pokebowl.css">
+    <link rel="stylesheet" href="./css/globalesstyle.css">
+    <link rel="stylesheet" href="./css/Pokebowl.css">
 
 
 </head>
@@ -78,80 +78,112 @@
                 </g>
             </svg>
             <div class="navli external_distance">
-                <ul><a href="#start">Start</a></ul>
+                <div class="navli external_distance">
+                <ul><a href="./Index.html">Start</a></ul>
                 <ul><a href="#Rezept des Tages">Rezept des Tages</a></ul>
-                <ul><a href="#Kontakt">Kontakt</a></ul>
+                <ul><a href="./Kontakt.html">Kontakt</a></ul>
                 <ul><a href="#Impressum">Impressum</a></ul>
             </div>
         </nav>
     </header>
 
-    <Menue Maria class="Maria">
-        <h1>Pokébowl</h1>
-        <img class="pokebowl" src="./03 - Gruppenarbeit - Kochwelt/Poke_quer.jpg">
-    </Menue>
+    <Seitenkontrolle class="footerdown">
+        <main class="mainbox">
+            <Menue>
+                <h1>Pokébowl</h1>
+                <img class="pokebowl" src="./03 - Gruppenarbeit - Kochwelt/Poke_quer.jpg">
+            </Menue>
 
-    <icon>
+            <icon class="Info">
+                <a class="icon-class"><img src="./03 - Gruppenarbeit - Kochwelt/img/icons/clock-regular.svg">40 Min.</a>
+                <a class="icon-class"><img src="./03 - Gruppenarbeit - Kochwelt/img/icons/brain-solid.svg">simpel</a>
+                <a class="icon-class"><img
+                        src="./03 - Gruppenarbeit - Kochwelt/img/icons/calendar-alt-regular.svg">17.09.2025</a>
+            </icon>
 
-        <a class="icon-class"><img class="icons" src="./03 - Gruppenarbeit - Kochwelt/img/icons/clock-regular.svg">
-            40
-            Min.</a>
-        <a class="icon-class"><img class="icons" src="./03 - Gruppenarbeit - Kochwelt/img/icons/brain-solid.svg">
-            simpel</a>
-        <a class="icon-class"><img class="icons"
-                src="./03 - Gruppenarbeit - Kochwelt/img/icons/calendar-alt-regular.svg">
-            17.09.2025</a>
+            <input type="number" class="button" id="portionen" name="Zutaten für">
+            <label for="portionen" class="button">Portionen</label></input>
 
-    </icon>
+            <table>
+                <tr>
+                    <th class="anzahl">2EL</th>
+                    <th class="Zutat">Granatapfelkerne</th>
+                </tr>
+                <tr>
+                    <td class="anzahl">2EL</td>
+                    <td class="Zutat">Spinat gedämpft</td>
 
-    <input mintype="number" class="button" id="portionen" name="Zutaten für">
-    <label for="portionen" class="button">Portionen</label>
+                <tr>
+                    <th class="anzahl">2EL</th>
+                    <th class="Zutat">Edamame geschält</th>
+                </tr>
+                <tr>
+                    <td class="anzahl">2EL</td>
+                    <td class="Zutat">Pilze gekocht</td>
+                </tr>
+                <tr>
+                    <th class="anzahl">2EL</th>
+                    <th class="Zutat">Mango</td>
+                </tr>
+                <tr>
+                    <td class="anzahl">2EL</td>
+                    <td class="Zutat">Avocado</td>
+                </tr>
+                <tr>
+                    <th class="anzahl">1</th>
+                    <th class="Zutat">gekochtes Ei</th>
+                </tr>
+                <tr>
+                    <td class="anzahl">60gr</td>
+                    <td class="Zutat">Sushi Reis</td>
+                </tr>
+                <tr>
+                    <th class="anzahl">80gr</th>
+                    <th class="Zutat">Lachs, roh oder gebraten</th>
+                </tr>
 
-    <table>
-        <tr>
-            <th class="anzahl">1</th>
-            <th class="Zutat">Granatapfel</th>
-        </tr>
-        <tr>
-            <th class="anzahl">1</th>
-            <th class="Zutat">Spinat gedämpft</th>
-        </tr>
-        <tr>
-            <th class="anzahl">1</th>
-            <th class="Zutat">Edamame</th>
-        </tr>
-        <tr>
-            <th class="anzahl">1</th>
-            <th class="Zutat">Pilze gekocht</th>
-        </tr>
-        <tr>
-            <th class="anzahl">1</th>
-            <th class="Zutat">Mango</th>
-        </tr>
-        <tr>
-            <th class="anzahl">1</th>
-            <th class="Zutat">gekochtes Ei</th>
-        </tr>
-        <tr>
-            <th class="anzahl">1</th>
-            <th class="Zutat">Avocado</th>
-        </tr>
-        <tr>
-            <th class="anzahl">1</th>
-            <th class="Zutat">Lachs, roh oder gebraten</th>
-        </tr>
-        <tr>
-            <th class="anzahl">1</th>
-            <th class="Zutat">Reis</th>
-        </tr>
-    </table>
+            </table>
 
-    </body-maria>
-    <footer id="footer">
-        <p>Impressum | Datenschutz | Kontakt</p>
-        <p>© 2025 Kochwelt. Alle Rechte vorbehalten.</p>
-    </footer>
-    <script src="global.js"></script>
+            <section>
+
+                <h2>Zubereitung</h2>
+                <ul>
+                    <li>Reis im Reiskocher oder Pfanne kochen.</li>
+                    <li>Granatapfel schälen und entkernen.</li>
+                    <li>Mango, Avocado schälen und in Mundgerechte würfel schneiden.</li>
+                    <li>Pilze Mundgerecht zuschneiden und kurz mit wenig Butter anbraten.</li>
+                    <li>Frischer Blattspinat kurz mit heissem Wasser abschrecken.</li>
+                    <li>Frischer Lachs in Würfeln schneiden. Wer sie nicht gerne roh verzehrt, kann der Lachs auch kurz
+                        in der Pfanne mit öl anbraten.</li>
+                    <li>Gekochter Reis mit wenig Reissessig und brise Salz vermischen.</li>
+                    <li>Reis in die Mitte der Schüssel anrichten.</li>
+                    <li>Nach Wunsch und freier Gestaltung kommen die restlichen Zutaten Mango, Avocado, Granatapfel,
+                        Edamame,
+                        Pilze, Lachs und Spinat und Ei in die Schüssel.</li>
+                    <li>Sosse darüber giessen, kurz bestaunen und dann alles gut vermischen.</li>
+                    <li>Bon appétit.</li>
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h2>Zubereitet von:</h2>
+                <div class="profile">
+                    <img src="./03 - Gruppenarbeit - Kochwelt/img/profile.png">
+                    <span>Maria Matugas</span>
+                </div>
+
+            </section>
+        </main>
+
+
+        <footer id="footer">
+            <p>Impressum | Datenschutz | Kontakt</p>
+            <p>© 2025 Kochwelt. Alle Rechte vorbehalten.</p>
+        </footer>
+        <script src="global.js"></script>
+    </Seitenkontrolle>
 
 </body>
 
