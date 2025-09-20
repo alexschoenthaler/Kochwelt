@@ -99,8 +99,8 @@
         <!-- submit button -->
         <form class="form_calculation">
             <label for="portion_form">Zutaten für:</label>
-            <input id="portions_input" value="1" type="number" min="1" max="20" required>
-            <button type="submit" onclick="portioncalculation('portions_input')">Portionen</button>
+            <input id="portions_input" value="1" type="number" min="1" max="20" required oninput="this.value = Math.abs(this.value)">
+            <button type="button" onclick="resetCalculatedPortions();portioncalculation('portions_input')">Portionen</button>
         </form>
         <!-- table -->
         <section class = "space_top">
@@ -133,26 +133,26 @@
                     <h3>Zutaten für die Füllung</h3>
                
                 <tr>
-                    <td>12Stk</td>
+                    <td class="calculated_value">12Stk</td>
                     <td class="vertical_table_space">entsteinte Marillen</td>
                 </tr>
                 <tr>
-                    <td>12Stk</td>
+                    <td class="calculated_value">12Stk</td>
                     <td class="vertical_table_space">Würfelzucker</td>
                 </tr>
             </table>
             <table class="space_top">
                     <h3>Butter-Brösel</h3>
                 <tr>
-                    <td>150g</td>
+                    <td class="calculated_value">150g</td>
                     <td class="vertical_table_space">geröstete Semmelbrösel</td>
                 </tr>
                 <tr>
-                    <td>1 Esl.</td>
+                    <td class="calculated_value">1 Esl.</td>
                     <td class="vertical_table_space">flüssige Butter</td>
                 </tr>
                 <tr>
-                    <td>1 Esl.</td>
+                    <td class="calculated_value">1 Esl.</td>
                     <td class="vertical_table_space">Zimtzucker</td>
                 </tr>
             </table>
@@ -187,6 +187,7 @@
 
     </footer>
     <script src="./script.js"></script>
+    <script src="./Alex_portions_calculator.js"></script>
 </body>
    
 </html>
